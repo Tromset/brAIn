@@ -97,8 +97,8 @@ ChatGPT : [2](https://chatgpt.ai/)
 
 Gemini : [3](https://gemini.ai/)
 
-Qwen : [4](https://github.com/Qwen/qwen)
+Qwen : [4](https://github.com/QwenLM/Qwen)
 
-Llama : [5](https://github.com/Llama/Llama)
+Llama : [5](https://github.com/meta-llama/llama)
 
-Gemma : [6](https://github.com/Gemma/gemma4)
+Gemma : [6](https://github.com/google-deepmind/gemma)
