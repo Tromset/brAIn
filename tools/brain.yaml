@@ -1,0 +1,10 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: tools
+purpose: "brAIn tooling — code embedded in Markdown per rule 4"
+parent: ../brain.yaml
+children: []
+files:
+  brain-audit.md: "Stdlib-only Python auditor: token costs, scan-vs-navigation savings, link integrity"
+when_to_read:
+  "Measure token costs or verify link integrity of a folder": brain-audit.md
+links: {}

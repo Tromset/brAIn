@@ -1,0 +1,12 @@
+# brain.yaml — folder variables (brAIn rule 6)
+# Template: replace every <placeholder>. Schema: ../../brAIn.md
+name: <folder-name>
+purpose: "<one line>"
+parent: ../brain.yaml          # null at the project root
+children: []                   # e.g. [assets/, docs/] — each gets its own README.md + brain.yaml
+files:
+  file.md: "<one-liner>"
+  config.json: "<one-liner — deep config, stays JSON>"
+when_to_read:                  # routing table: question an agent might have -> file to open
+  "<question>": file.md
+links: {}                      # optional external references (URLs, tickets, dashboards)

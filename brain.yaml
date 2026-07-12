@@ -1,0 +1,23 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: brAIn
+purpose: "Turn any folder or repository into an AI paradise — brain-like structure, radical token savings"
+parent: null
+children: [templates/, examples/, tools/]
+files:
+  README.md: "The Hub — concept, the 6 rules, quickstart, repo map"
+  brAIn.md: "The technology spec: rules in detail, hub convention, brain.yaml schema"
+  Prompt.md: "Copy-paste transformation prompt for any LLM"
+  Audit.md: "Measurement methodology + demo audit results"
+  Croquis-brAIn.md: "Original project sketch (French, historical)"
+when_to_read:
+  "What is brAIn / where do I start?": README.md
+  "What are the exact rules and schemas?": brAIn.md
+  "Transform a folder with an LLM": Prompt.md
+  "What are the measured token savings?": Audit.md
+  "Blank files to copy into a folder": templates/README.md
+  "A concrete before/after example": examples/README.md
+  "Measure or verify a folder": tools/brain-audit.md
+links:
+  claude: https://claude.ai/
+  chatgpt: https://chatgpt.com
+  gemini: https://gemini.google.com

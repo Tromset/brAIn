@@ -1,0 +1,9 @@
+{
+  "$comment": "brAIn rule 5: MCPs and deep configs stay .json. Link this file from the folder's README.md hub so it is not an orphan.",
+  "mcpServers": {
+    "<server-name>": {
+      "command": "<command>",
+      "args": []
+    }
+  }
+}

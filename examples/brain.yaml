@@ -1,0 +1,9 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: examples
+purpose: "Before/after brAIn demos with measurable token savings"
+parent: ../brain.yaml
+children: [madame-martin/]
+files: {}
+when_to_read:
+  "Show me a concrete before/after brAIn transformation": madame-martin/README.md
+links: {}

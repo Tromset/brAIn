@@ -1,0 +1,9 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: templates
+purpose: "Ready-to-copy brAIn skeleton files for a new folder"
+parent: ../brain.yaml
+children: [skeleton/]
+files: {}
+when_to_read:
+  "I need blank brAIn files to copy into a folder": skeleton/README.md
+links: {}

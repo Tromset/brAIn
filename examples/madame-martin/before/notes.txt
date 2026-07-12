@@ -1,0 +1,16 @@
+notes perso projet mme martin
+-----------------------------
+
+09/06 - appel rapide avec la cliente
+- elle prefere finalement "Patisserie maison" dans le titre de l'onglet
+- l'eclair est bien a 4,50 (pas 4,00 comme dans le brief v2)
+- verifier l'orthographe de "pralinee lyonnaise"
+
+10/06 - technique
+- rester en HTML/CSS pur, pas de framework (site 1 page, budget mini)
+- police: Georgia fait l'affaire, pas de webfont (perf + simplicite)
+- le rose du logo boite a gateaux ~ #d96c8a (pris a la pipette sur la photo)
+
+idees plus tard (PAS maintenant)
+- galerie photos apres la seance photo
+- peut-etre un formulaire de commande si elle change d'avis

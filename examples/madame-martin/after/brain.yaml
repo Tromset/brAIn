@@ -1,0 +1,14 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: madame-martin
+purpose: "One-page bakery website for Mme Martin (Lyon) — pure HTML/CSS"
+parent: ../brain.yaml
+children: []
+files:
+  site.md: "The website — full HTML and CSS in code fences"
+  notes.md: "Client brief + working notes merged: requirements, decisions, out-of-scope"
+  todo.md: "Task list — done and remaining"
+when_to_read:
+  "Edit the page, the styles or the wording": site.md
+  "What did the client ask for / what was decided?": notes.md
+  "What is left to do?": todo.md
+links: {}

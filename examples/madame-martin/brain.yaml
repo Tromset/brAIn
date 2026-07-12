@@ -1,0 +1,11 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: madame-martin
+purpose: "Before/after demo: one-page bakery website, messy vs brAInified"
+parent: ../brain.yaml
+children: [before/, after/]
+files: {}
+when_to_read:
+  "What does a messy pre-brAIn folder look like?": before/
+  "What does the same project look like brAInified?": after/README.md
+  "What are the measured token savings?": README.md
+links: {}

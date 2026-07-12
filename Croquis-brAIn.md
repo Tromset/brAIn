@@ -1,5 +1,7 @@
 # brAIn
 
+> *Original project sketch (French) — see [README.md](README.md) for the current project.*
+
 ## But :
 
 Créer une structure de penser reproduisant le cerveau pour les LLMs :
@@ -87,7 +89,6 @@ Créer un repo qui permet de transformer n'importe quel dossier en paradis pour 
 |brAIn.md------>|Technologie
 |Audit.md------>|Présentation d'audits qui ont identifiés des changements radicaux de consommention de tokens sur le dossier/repo
 ````
-<!-- Pour Claude: Trouve une meilleure architecture de repo et applique la tout en gardant mon idée de base, aussi écrire le code dont je parle et organiser le projet plus ergonomiquement, ensuite prendre un repo comme cyclades-workspace et le transformer en brAIn et run un audit des améliorations et le mettre dans Audit.md , traduis aussi le repo en anglais, et on sera tout bon. -->
 ## Références :
 
 Claude : [1](https://claude.ai/)

@@ -1,0 +1,24 @@
+BRIEF CLIENT - SITE MADAME MARTIN
+(exported from brief_v3_FINAL(2).docx - formatting lost)
+
+Client: Mme Martin, patissiere a Lyon (Croix-Rousse)
+Contact: 04 72 00 00 00 / contact@madame-martin.example
+Budget: 400 EUR    Deadline: fin du mois
+
+CE QUE VEUT LA CLIENTE
+- un site UNE SEULE PAGE, simple, "comme une jolie vitrine"
+- couleurs: rose et creme ("comme mes boites a gateaux")
+- montrer les 3 specialites avec les prix
+- un bouton pour commander (telephone + email, PAS de paiement en ligne)
+- mentionner: ingredients du marche Saint-Antoine, tout fait le matin meme
+
+A NE PAS FAIRE
+- pas de photos pour l'instant (seance photo prevue plus tard)
+- pas de reseaux sociaux (elle n'en a pas)
+- pas d'anglais, clientele 100% locale
+
+NOTES REUNION 03/06
+- elle insiste sur le ton chaleureux, "comme si je parlais aux clients"
+- phrase d'accueil imposee: "Salut a tous, c'est Madame Martin"
+- commandes 48h a l'avance minimum
+- adresse a mettre en pied de page: 12 rue des Capucins, 69001 Lyon

@@ -1,0 +1,9 @@
+TODO site mme martin
+
+[x] structure html une page
+[x] palette rose/creme en variables css
+[x] section specialites avec les 3 prix
+[ ] faire valider la phrase d'accueil exacte par la cliente
+[ ] tester l'affichage mobile (< 400px)
+[ ] deployer sur l'hebergement OVH de la cliente
+[ ] rappeler la cliente pour la seance photo (juillet)
