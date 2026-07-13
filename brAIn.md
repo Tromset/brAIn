@@ -42,7 +42,7 @@ Source code is embedded in `.md` files inside fenced blocks with a language tag:
 ## The page
 
 ```html
-<h1>Salut à tous</h1>
+<h1>Hello everyone</h1>
 ```
 ````
 
