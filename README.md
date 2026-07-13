@@ -62,7 +62,6 @@ This repo dogfoods its own rules — every folder has a hub and a `brain.yaml`, 
 | [examples/](examples/README.md) | Before/after demos — currently [madame-martin/](examples/madame-martin/README.md) |
 | [tools/](tools/README.md) | The auditor, embedded in Markdown per rule 4 |
 | [.claude/skills/brainify/](.claude/skills/brainify/SKILL.md) | Claude Code skill wrapping the prompt |
-| [Croquis-brAIn.md](Croquis-brAIn.md) | The original project sketch (French, historical) |
 | [brain.yaml](brain.yaml) | This folder's variables (rule 6) |
 
 ## References
