@@ -2,7 +2,7 @@
 
 > 🧠 [Parent hub](../README.md) · [Variables](brain.yaml) · Full audit: [../../Audit.md](../../Audit.md)
 
-The fictional mini-project from the [original sketch](../../Croquis-brAIn.md): a one-page bakery website for Mme Martin, shown twice with the **same information content** —
+The fictional mini-project from the original sketch (see the spec, [brAIn.md](../../brAIn.md)): a one-page bakery website for Mme Martin, shown twice with the **same information content** —
 
 - [before/](#before--the-typical-messy-folder) — the typical messy project folder (no index, opaque filenames)
 - [after/](after/README.md) — the same project brAInified per the [6 rules](../../brAIn.md)
