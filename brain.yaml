@@ -2,21 +2,21 @@
 name: brAIn
 purpose: "Turn any folder or repository into an AI paradise — brain-like structure, radical token savings"
 parent: null
-children: [templates/, examples/, tools/]
+children: [examples/]
 files:
   README.md: "The Hub — concept, the 6 rules, quickstart, repo map"
   brAIn.md: "The technology spec: rules in detail, hub convention, brain.yaml schema"
   Prompt.md: "Copy-paste transformation prompt for any LLM"
-  Audit.md: "Measurement methodology + demo audit results"
-  Croquis-brAIn.md: "Original project sketch (French, historical)"
+  Audit.md: "Measurement methodology, demo audit results + the embedded auditor script"
+  templates.md: "The four ready-to-copy brAIn file templates, in code fences"
 when_to_read:
   "What is brAIn / where do I start?": README.md
   "What are the exact rules and schemas?": brAIn.md
   "Transform a folder with an LLM": Prompt.md
   "What are the measured token savings?": Audit.md
-  "Blank files to copy into a folder": templates/README.md
+  "Measure or verify a folder": Audit.md
+  "Blank files to copy into a folder": templates.md
   "A concrete before/after example": examples/README.md
-  "Measure or verify a folder": tools/brain-audit.md
 links:
   claude: https://claude.ai/
   chatgpt: https://chatgpt.com

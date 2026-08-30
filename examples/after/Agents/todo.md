@@ -1,11 +1,11 @@
 # todo.md — task list
 
-> 🧠 [Hub](README.md) · [Variables](brain.yaml) · Code: [site.md](site.md) · Requirements: [notes.md](notes.md)
+> 🧠 [Hub](README.md) · [Variables](brain.yaml) · [Code](../Code/README.md) · [Requirements](notes.md)
 
 ## Done
 
-- [x] One-page HTML structure → [site.md](site.md)
-- [x] Pink/cream palette as CSS variables
+- [x] One-page HTML structure → [index.html](../Code/index.html)
+- [x] Pink/cream palette as CSS variables → [style.css](../Code/style.css)
 - [x] Specialties section with the 3 prices
 
 ## Remaining

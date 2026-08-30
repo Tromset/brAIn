@@ -1,0 +1,12 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: madame-martin
+purpose: "Agent-ready bakery website: Agents/ provides context, Code/ contains the executable site"
+parent: ../brain.yaml
+children: [Agents/, Code/]
+files: {}
+when_to_read:
+  "What did the client ask for / what was decided?": Agents/notes.md
+  "What is left to do?": Agents/todo.md
+  "Edit the page structure or wording": Code/index.html
+  "Edit the styles or responsive layout": Code/style.css
+links: {}

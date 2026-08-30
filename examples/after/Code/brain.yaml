@@ -1,0 +1,12 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: Code
+purpose: "Executable HTML and CSS for the Madame Martin website"
+parent: ../brain.yaml
+children: []
+files:
+  index.html: "The one-page bakery website"
+  style.css: "The pink-and-cream visual design"
+when_to_read:
+  "Edit the page structure or wording": index.html
+  "Edit the visual design or responsive layout": style.css
+links: {}

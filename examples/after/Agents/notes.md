@@ -1,6 +1,6 @@
 # notes.md — client brief and working notes (merged)
 
-> 🧠 [Hub](README.md) · [Variables](brain.yaml) · Code: [site.md](site.md) · Tasks: [todo.md](todo.md)
+> 🧠 [Hub](README.md) · [Variables](brain.yaml) · [Code](../Code/index.html) · [Tasks](todo.md)
 
 *Merged from `brief.txt` (client brief, exported from `brief_v3_FINAL(2).docx`) and `notes.txt` (working notes) — one file, no duplicates.*
 
@@ -17,7 +17,7 @@
 - Show the **3 specialties with prices** (éclair is €4.50 — corrected on the 09/06 call, not €4.00 as in brief v2)
 - An order button: **phone + email only, no online payment**
 - Mention: ingredients from the Saint-Antoine market, everything baked the same morning
-- Imposed greeting, verbatim: **"Salut à tous, c'est Madame Martin"**
+- Draft greeting requested by the client, pending exact validation: **"Salut à tous, c'est Madame Martin"**
 - Warm tone, "as if I were talking to my customers"
 - Orders at least 48 h ahead; footer address: 12 rue des Capucins, 69001 Lyon
 - Browser-tab title: "Pâtisserie maison" (client preference, 09/06 call)
@@ -30,7 +30,7 @@
 
 ## Technical decisions (10/06)
 
-- Pure HTML/CSS, **no framework** — one-page site, minimal budget → [site.md](site.md)
+- Pure HTML/CSS, **no framework** — one-page site, minimal budget → [Code](../Code/README.md)
 - Font: Georgia, no webfont (performance + simplicity)
 
 ## Ideas for later (NOT now)

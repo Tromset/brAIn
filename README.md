@@ -36,18 +36,18 @@ Full detail in the spec: [brAIn.md](brAIn.md).
 
 **Claude Code** — this repo ships a skill: say *"brainify this folder"* (see [.claude/skills/brainify/SKILL.md](.claude/skills/brainify/SKILL.md)).
 
-**Starting a folder by hand** — copy [templates/skeleton/](templates/skeleton/README.md) into it and fill the placeholders.
+**Starting a folder by hand** — copy the four templates from [templates.md](templates.md) and fill the placeholders.
 
-**Measure & verify** — extract the stdlib-only auditor from [tools/brain-audit.md](tools/brain-audit.md):
+**Measure & verify** — extract the stdlib-only auditor embedded in [Audit.md](Audit.md):
 
 ```bash
-awk '/^```python$/{code=1; next} /^```$/{code=0} code' tools/brain-audit.md > brain_audit.py
+awk '/^```python$/{code=1; next} /^```$/{code=0} code' Audit.md > brain_audit.py
 python3 brain_audit.py <your-folder>   # tokens, scan-vs-navigation savings, link integrity
 ```
 
 ## Proof
 
-The demo in [examples/madame-martin/](examples/madame-martin/README.md) shows the same mini-project before and after brAIn: per-lookup costs drop **7–58% even on a 5-file toy project**, and the saving grows with project size. Methodology and full tables: [Audit.md](Audit.md).
+The demo in [examples/](examples/README.md) shows the same mini-project before and after brAIn: per-lookup costs drop **7–58% even on a 5-file toy project**, and the saving grows with project size. Methodology and full tables: [Audit.md](Audit.md).
 
 ## Repo map
 
@@ -57,10 +57,9 @@ This repo dogfoods its own rules — every folder has a hub and a `brain.yaml`, 
 |---|---|
 | [brAIn.md](brAIn.md) | The technology spec: the 6 rules in detail, hub convention, `brain.yaml` schema |
 | [Prompt.md](Prompt.md) | The transformation prompt — copy-paste into any LLM to brAInify a folder |
-| [Audit.md](Audit.md) | Measurement methodology + demo audit results |
-| [templates/](templates/README.md) | Ready-to-copy skeleton files (hub, `brain.yaml`, content file, config) |
-| [examples/](examples/README.md) | Before/after demos — currently [madame-martin/](examples/madame-martin/README.md) |
-| [tools/](tools/README.md) | The auditor, embedded in Markdown per rule 4 |
+| [Audit.md](Audit.md) | Measurement methodology, demo results + the auditor itself (embedded per rule 4) |
+| [templates.md](templates.md) | Ready-to-copy templates (hub, `brain.yaml`, content file, config) |
+| [examples/](examples/README.md) | Before/after demo — the "Site Madame Martin" mini-project |
 | [.claude/skills/brainify/](.claude/skills/brainify/SKILL.md) | Claude Code skill wrapping the prompt |
 | [brain.yaml](brain.yaml) | This folder's variables (rule 6) |
 
