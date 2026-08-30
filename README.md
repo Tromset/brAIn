@@ -47,7 +47,7 @@ python3 brain_audit.py <your-folder>   # tokens, scan-vs-navigation savings, lin
 
 ## Proof
 
-The demo in [examples/](examples/README.md) shows the same mini-project before and after brAIn: per-lookup costs drop **7–58% even on a 5-file toy project**, and the saving grows with project size. Methodology and full tables: [Audit.md](Audit.md).
+The demo in [examples/](examples/README.md) shows the same mini-project before and after brAIn: per-lookup costs drop **7–35% even on a 5-file toy project**, and the saving grows with project size. Methodology and full tables: [Audit.md](Audit.md).
 
 ## Repo map
 
