@@ -34,7 +34,7 @@ Numbers from the auditor in [Audit.md](../Audit.md) (chars ÷ 3.5 heuristic), fu
 
 | Lookup scenario | before (full scan) | after (hub navigation) | Savings |
 |---|---:|---:|---:|
-| "What is left to do?" | 1179 | 767 | 34.9% |
-| "What did the client ask for?" | 1179 | 1078 | 8.6% |
+| "What is left to do?" | 1179 | 770 | 34.7% |
+| "What did the client ask for?" | 1179 | 1089 | 7.6% |
 | "Edit the page structure or wording" | 1179 | 954 | 19.1% |
 | "Edit the styles or responsive layout" | 1179 | 831 | 29.5% |

@@ -4,7 +4,7 @@
 
 brAIn turns any folder or repository into a **brain-like structure optimized for LLMs**: a small navigation layer (hubs + variables files) routes an AI agent straight to the one file it needs, instead of forcing it to read everything. The result is a radical reduction in token consumption per task.
 
-This document is the specification. The step-by-step transformation algorithm lives in [Prompt.md](Prompt.md), ready-to-copy file templates in [templates/README.md](templates/README.md), and the measurement tool in [tools/brain-audit.md](tools/brain-audit.md).
+This document is the specification. The step-by-step transformation algorithm lives in [Prompt.md](Prompt.md), ready-to-copy file templates in [templates.md](templates.md), and the measurement tool in [Audit.md](Audit.md).
 
 ---
 
@@ -46,11 +46,11 @@ Source code is embedded in `.md` files inside fenced blocks with a language tag:
 ```
 ````
 
-One `.md` file can hold several fences (e.g. HTML + CSS for one page). The fence's language tag makes extraction trivial — see [tools/brain-audit.md](tools/brain-audit.md) for a one-liner that extracts and runs an embedded script.
+One `.md` file can hold several fences (e.g. HTML + CSS for one page). The fence's language tag makes extraction trivial — see [Audit.md](Audit.md) for a one-liner that extracts and runs an embedded script.
 
 ### Rule 5 — MCPs and deep configs stay `.json`
 
-Machine-consumed configuration (MCP server definitions, tool configs, lockfile-like data) stays in `.json` files. They don't get converted to Markdown, but they **must be linked** from their folder's hub so they remain reachable (Rule 2). A template is at [templates/skeleton/config.json](templates/skeleton/config.json).
+Machine-consumed configuration (MCP server definitions, tool configs, lockfile-like data) stays in `.json` files. They don't get converted to Markdown, but they **must be linked** from their folder's hub so they remain reachable (Rule 2). A template is in [templates.md](templates.md).
 
 ### Rule 6 — Every folder has a `.yaml` with its variables
 
@@ -83,7 +83,7 @@ All fields are required except `links`. `when_to_read` is the most important fie
 |---|---|---|
 | Hub | `README.md` (one per folder) | [README.md](README.md) |
 | Variables file | `brain.yaml` (one per folder) | [brain.yaml](brain.yaml) |
-| Content files | short kebab-case `.md` | `brain-audit.md` |
+| Content files | short kebab-case `.md` | `templates.md` |
 | Deep configs | `.json`, linked from the hub | `config.json` |
 | Nav header | first line of every content file | `> 🧠 [Hub](README.md) · …` |
 
@@ -98,10 +98,10 @@ All fields are required except `links`. `when_to_read` is the most important fie
                    |----->|folder 6 ------|       |---->| brain.yaml |->variables<----| : especially this one
 ````
 
-**Cost model.** Without brAIn, an agent looking for one fact must scan the whole folder (`full-scan cost` = sum of all files). With brAIn, it reads the hubs and `brain.yaml` files on the path, then the one target file (`hub-navigation cost`). [Audit.md](Audit.md) shows measured numbers; [tools/brain-audit.md](tools/brain-audit.md) measures any folder.
+**Cost model.** Without brAIn, an agent looking for one fact must scan the whole folder (`full-scan cost` = sum of all files). With brAIn, it reads the hubs and `brain.yaml` files on the path, then the one target file (`hub-navigation cost`). [Audit.md](Audit.md) shows measured numbers and embeds the auditor that measures any folder.
 
 ## Applying brAIn
 
 - **Any LLM**: paste [Prompt.md](Prompt.md) with the target folder.
 - **Claude Code**: use the [brainify skill](.claude/skills/brainify/SKILL.md).
-- **Verify**: run the auditor from [tools/brain-audit.md](tools/brain-audit.md) — it must report 0 broken links and 0 orphan files.
+- **Verify**: run the auditor embedded in [Audit.md](Audit.md) — it must report 0 broken links and 0 orphan files.

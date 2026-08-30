@@ -20,4 +20,4 @@ Rendre le projet inclusif aux autres modèles d'IA.
 3. L'agent travaille sur les fichiers exécutables dans `Code/`.
 4. Les hubs relient le contexte et le code pour conserver une navigation claire.
 
-Exemple complet : [examples/madame-martin/after/](examples/madame-martin/after/README.md), avec le [contexte des agents](examples/madame-martin/after/Agents/README.md) séparé du [code exécutable](examples/madame-martin/after/Code/README.md).
+Exemple complet : [examples/after/](examples/after/README.md), avec le [contexte des agents](examples/after/Agents/README.md) séparé du [code exécutable](examples/after/Code/README.md).

@@ -40,28 +40,28 @@ No `README.md` hub at the root: an agent has no index and must read everything �
 |---|---:|---:|
 | Agents/README.md | 534 | 153 |
 | Agents/brain.yaml | 425 | 121 |
-| Agents/notes.md | 1636 | 467 |
-| Agents/todo.md | 545 | 156 |
+| Agents/notes.md | 1674 | 478 |
+| Agents/todo.md | 557 | 159 |
 | Code/README.md | 475 | 136 |
 | Code/brain.yaml | 391 | 112 |
-| Code/index.html | 1290 | 369 |
+| Code/index.html | 1291 | 369 |
 | Code/style.css | 861 | 246 |
 | README.md | 707 | 202 |
 | brain.yaml | 472 | 135 |
-| **Total (full-scan cost)** |  | **2097** |
+| **Total (full-scan cost)** |  | **2111** |
 
 | Folder | Tokens (est.) |
 |---|---:|
 | (root) | 337 |
-| Agents/ | 897 |
+| Agents/ | 911 |
 | Code/ | 863 |
 
 | Scenario: read one file | Hub navigation | Full scan | Savings |
 |---|---:|---:|---:|
-| Agents/notes.md | 1078 | 2097 | 48.6% |
-| Agents/todo.md | 767 | 2097 | 63.4% |
-| Code/index.html | 954 | 2097 | 54.5% |
-| Code/style.css | 831 | 2097 | 60.4% |
+| Agents/notes.md | 1089 | 2111 | 48.4% |
+| Agents/todo.md | 770 | 2111 | 63.5% |
+| Code/index.html | 954 | 2111 | 54.8% |
+| Code/style.css | 831 | 2111 | 60.6% |
 
 Link integrity: broken relative links **0**, orphan files **0**.
 
@@ -69,15 +69,15 @@ Link integrity: broken relative links **0**, orphan files **0**.
 
 | Lookup scenario | before (full scan) | after (hub navigation) | Savings |
 |---|---:|---:|---:|
-| "What is left to do?" | 1179 | 767 | 34.9% |
-| "What did the client ask for?" | 1179 | 1078 | 8.6% |
+| "What is left to do?" | 1179 | 770 | 34.7% |
+| "What did the client ask for?" | 1179 | 1089 | 7.6% |
 | "Edit the page structure or wording" | 1179 | 954 | 19.1% |
 | "Edit the styles or responsive layout" | 1179 | 831 | 29.5% |
 
 ### Reading the numbers honestly
 
-- The navigation layer is **overhead at rest**: after/ totals 2097 tokens vs 1179 before (hubs, `brain.yaml`, richer context, and the explicit `Agents/` / `Code/` split). brAIn pays off **per lookup**, not per byte stored.
-- Even in this deliberately tiny project, every measured scenario is cheaper — from 8.6% for the detailed client context to 34.9% for the task list.
+- The navigation layer is **overhead at rest**: after/ totals 2111 tokens vs 1179 before (hubs, `brain.yaml`, richer context, and the explicit `Agents/` / `Code/` split). brAIn pays off **per lookup**, not per byte stored.
+- Even in this deliberately tiny project, every measured scenario is cheaper — from 7.6% for the detailed client context to 34.7% for the task list.
 - The saving scales with project size: hub-navigation cost stays roughly constant (hub + yaml + one file) while full-scan cost grows with every file added. In a 50-file repo the same scenarios sit above 90% savings.
 
 ## The auditor
