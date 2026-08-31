@@ -1,16 +1,16 @@
-notes perso projet mme martin
------------------------------
+personal notes — mme martin project
+------------------------------------
 
-09/06 - appel rapide avec la cliente
-- elle prefere finalement "Patisserie maison" dans le titre de l'onglet
-- l'eclair est bien a 4,50 (pas 4,00 comme dans le brief v2)
-- verifier l'orthographe de "pralinee lyonnaise"
+09/06 - quick call with the client
+- she prefers "Homemade pastry" in the tab title after all
+- the éclair is indeed €4.50 (not €4.00 as in brief v2)
+- check the spelling of "Lyonnaise praline"
 
-10/06 - technique
-- rester en HTML/CSS pur, pas de framework (site 1 page, budget mini)
-- police: Georgia fait l'affaire, pas de webfont (perf + simplicite)
-- le rose du logo boite a gateaux ~ #d96c8a (pris a la pipette sur la photo)
+10/06 - technical
+- stick to pure HTML/CSS, no framework (one-page site, tiny budget)
+- font: Georgia is fine, no webfont (perf + simplicity)
+- the pink from the cake-box logo ≈ #d96c8a (eyedropped from the photo)
 
-idees plus tard (PAS maintenant)
-- galerie photos apres la seance photo
-- peut-etre un formulaire de commande si elle change d'avis
+ideas for later (NOT now)
+- photo gallery after the shoot
+- maybe an order form if she changes her mind

@@ -6,7 +6,7 @@
 
 ## Client
 
-- **Mme Martin**, pâtissière in Lyon (Croix-Rousse)
+- **Mme Martin**, pastry chef in Lyon (Croix-Rousse)
 - Contact: 04 72 00 00 00 / contact@madame-martin.example
 - Budget: €400 · Deadline: end of the month
 
@@ -17,16 +17,16 @@
 - Show the **3 specialties with prices** (éclair is €4.50 — corrected on the 09/06 call, not €4.00 as in brief v2)
 - An order button: **phone + email only, no online payment**
 - Mention: ingredients from the Saint-Antoine market, everything baked the same morning
-- Draft greeting requested by the client, pending exact validation: **"Salut à tous, c'est Madame Martin"**
+- Draft greeting requested by the client, pending exact validation: **"Hi everyone, this is Madame Martin"**
 - Warm tone, "as if I were talking to my customers"
 - Orders at least 48 h ahead; footer address: 12 rue des Capucins, 69001 Lyon
-- Browser-tab title: "Pâtisserie maison" (client preference, 09/06 call)
+- Browser-tab title: "Homemade pastry" (client preference, 09/06 call)
 
 ## Out of scope (client's explicit wishes)
 
 - No photos for now (photo shoot planned later)
 - No social media (she has none)
-- No English version — 100% local clientele
+- English only — 100% local clientele
 
 ## Technical decisions (10/06)
 

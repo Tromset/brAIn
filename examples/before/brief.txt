@@ -1,24 +1,24 @@
-BRIEF CLIENT - SITE MADAME MARTIN
+CLIENT BRIEF — MADAME MARTIN WEBSITE
 (exported from brief_v3_FINAL(2).docx - formatting lost)
 
-Client: Mme Martin, patissiere a Lyon (Croix-Rousse)
+Client: Mme Martin, pastry chef in Lyon (Croix-Rousse)
 Contact: 04 72 00 00 00 / contact@madame-martin.example
-Budget: 400 EUR    Deadline: fin du mois
+Budget: €400    Deadline: end of the month
 
-CE QUE VEUT LA CLIENTE
-- un site UNE SEULE PAGE, simple, "comme une jolie vitrine"
-- couleurs: rose et creme ("comme mes boites a gateaux")
-- montrer les 3 specialites avec les prix
-- un bouton pour commander (telephone + email, PAS de paiement en ligne)
-- mentionner: ingredients du marche Saint-Antoine, tout fait le matin meme
+WHAT THE CLIENT WANTS
+- a SINGLE-PAGE site, simple, "like a pretty shop window"
+- colors: pink and cream ("like my cake boxes")
+- show the 3 specialties with prices
+- a button to order (phone + email, NO online payment)
+- mention: ingredients from the Saint-Antoine market, everything made the same morning
 
-A NE PAS FAIRE
-- pas de photos pour l'instant (seance photo prevue plus tard)
-- pas de reseaux sociaux (elle n'en a pas)
-- pas d'anglais, clientele 100% locale
+DO NOT DO
+- no photos for now (photo shoot planned later)
+- no social media (she has none)
+- English only — 100% local clientele
 
-NOTES REUNION 03/06
-- elle insiste sur le ton chaleureux, "comme si je parlais aux clients"
-- phrase d'accueil imposee: "Salut a tous, c'est Madame Martin"
-- commandes 48h a l'avance minimum
-- adresse a mettre en pied de page: 12 rue des Capucins, 69001 Lyon
+MEETING NOTES 03/06
+- she insists on a warm tone, "as if I were talking to my customers"
+- required greeting: "Hi everyone, this is Madame Martin"
+- orders at least 48h in advance
+- address for the footer: 12 rue des Capucins, 69001 Lyon

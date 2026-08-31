@@ -1,15 +1,15 @@
 :root {
   --rose: #d96c8a;
-  --creme: #fdf6ee;
-  --encre: #3a2e2a;
+  --cream: #fdf6ee;
+  --ink: #3a2e2a;
 }
 
 * { box-sizing: border-box; margin: 0; }
 
 body {
   font-family: Georgia, "Times New Roman", serif;
-  background: var(--creme);
-  color: var(--encre);
+  background: var(--cream);
+  color: var(--ink);
   line-height: 1.6;
 }
 

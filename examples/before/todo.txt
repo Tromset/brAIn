@@ -1,9 +1,9 @@
-TODO site mme martin
+TODO mme martin site
 
-[x] structure html une page
-[x] palette rose/creme en variables css
-[x] section specialites avec les 3 prix
-[ ] faire valider la phrase d'accueil exacte par la cliente
-[ ] tester l'affichage mobile (< 400px)
-[ ] deployer sur l'hebergement OVH de la cliente
-[ ] rappeler la cliente pour la seance photo (juillet)
+[x] one-page html structure
+[x] pink/cream palette as css variables
+[x] specialties section with the 3 prices
+[ ] get the exact greeting sentence validated by the client
+[ ] test mobile display (< 400px)
+[ ] deploy to the client's OVH hosting
+[ ] call the client back about the photo shoot (July)
