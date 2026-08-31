@@ -1,10 +1,10 @@
 # brAIn — The Technology
 
-> 🧠 [Hub](README.md) · [brain.yaml](brain.yaml) · [Prompt.md](Prompt.md) · [Audit.md](Audit.md)
+> 🧠 [Hub](README.md) · [brain.yaml](brain.yaml) · [Skill.md](Skill.md) · [Audit.md](Audit.md)
 
 brAIn turns any folder or repository into a **brain-like structure optimized for LLMs**: a small navigation layer (hubs + variables files) routes an AI agent straight to the one file it needs, instead of forcing it to read everything. The result is a radical reduction in token consumption per task.
 
-This document is the specification. The step-by-step transformation algorithm lives in [Prompt.md](Prompt.md), ready-to-copy file templates in [templates.md](templates.md), and the measurement tool in [Audit.md](Audit.md).
+This document is the specification. The step-by-step transformation workflow lives in [Skill.md](Skill.md), ready-to-copy file templates in [templates.md](templates.md), and the measurement tool in [Audit.md](Audit.md).
 
 ---
 
@@ -102,7 +102,6 @@ All fields are required except `links`. `when_to_read` is the most important fie
 
 ## Applying brAIn
 
-- **Any LLM**: paste [Prompt.md](Prompt.md) with the target folder.
-- **Claude Code / Cursor**: use the [brainify skill](Skill.md).
+- **Any LLM / agent**: give it [Skill.md](Skill.md) with the target folder (or say *"brainify this folder"* in Claude Code / Cursor).
 - **CLI**: `python3 scripts/brainify.py <folder>` — see [scripts/](scripts/README.md).
 - **Verify**: run [scripts/brain_audit.py](scripts/brain_audit.py) — it must report 0 broken links and 0 orphan files.

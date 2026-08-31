@@ -5,7 +5,7 @@
 A fictional mini-project (see the spec, [brAIn.md](../brAIn.md)): a one-page bakery website for Mme Martin, shown twice with the **same information content** —
 
 - [before/](#before--the-typical-messy-folder) — the typical messy project folder (no index, opaque filenames)
-- [after/](after/README.md) — the same project with brAIn navigation plus the `Agents/` / `Code/` workflow from [Prompt.md](../Prompt.md)
+- [after/](after/README.md) — the same project with brAIn navigation plus the `Agents/` / `Code/` workflow from [Skill.md](../Skill.md)
 
 ## before/ — the typical messy folder
 

@@ -6,15 +6,14 @@ children: [examples/, scripts/]
 files:
   README.md: "The Hub — concept, the 6 rules, quickstart, repo map"
   brAIn.md: "The technology spec: rules in detail, hub convention, brain.yaml schema"
-  Prompt.md: "Copy-paste transformation prompt for any LLM"
+  Skill.md: "The brainify skill — workflow + templates to brAInify any folder"
   Audit.md: "Measurement methodology, demo audit results + the embedded auditor script"
   templates.md: "The four ready-to-copy brAIn file templates, in code fences"
-  Skill.md: "Agent skill definition for brainify"
   brainify: "Launcher — Finder folder picker, then runs scripts/brainify.py"
 when_to_read:
   "What is brAIn / where do I start?": README.md
   "What are the exact rules and schemas?": brAIn.md
-  "Transform a folder with an LLM": Prompt.md
+  "Transform a folder / brainify": Skill.md
   "Transform a folder from the terminal / CLI": scripts/README.md
   "Pick a folder in Finder and brainify it": brainify
   "What are the measured token savings?": Audit.md
