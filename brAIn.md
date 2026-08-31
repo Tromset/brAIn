@@ -103,5 +103,6 @@ All fields are required except `links`. `when_to_read` is the most important fie
 ## Applying brAIn
 
 - **Any LLM**: paste [Prompt.md](Prompt.md) with the target folder.
-- **Claude Code**: use the [brainify skill](.claude/skills/brainify/SKILL.md).
-- **Verify**: run the auditor embedded in [Audit.md](Audit.md) — it must report 0 broken links and 0 orphan files.
+- **Claude Code / Cursor**: use the [brainify skill](Skill.md).
+- **CLI**: `python3 scripts/brainify.py <folder>` — see [scripts/](scripts/README.md).
+- **Verify**: run [scripts/brain_audit.py](scripts/brain_audit.py) — it must report 0 broken links and 0 orphan files.

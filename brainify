@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# brainify — choose a folder in Finder and turn it into a brAIn.
+#
+# Usage:
+#   ./brainify                      # opens the Finder folder picker
+#   ./brainify <folder> [flags]     # skips the picker
+#   ./brainify --no-split           # picker, keep layout (no Agents/ + Code/)
+#
+# Flags are passed through to scripts/brainify.py:
+#   --no-split --force --dry-run --no-audit
+set -euo pipefail
+
+# Resolve symlinks so the launcher works via e.g. ~/.local/bin/brainify.
+SELF="${BASH_SOURCE[0]}"
+while [[ -L "$SELF" ]]; do
+  DIR="$(cd "$(dirname "$SELF")" && pwd)"
+  SELF="$(readlink "$SELF")"
+  [[ "$SELF" != /* ]] && SELF="$DIR/$SELF"
+done
+HERE="$(cd "$(dirname "$SELF")" && pwd)"
+ENGINE="$HERE/scripts/brainify.py"
+
+if [[ ! -f "$ENGINE" ]]; then
+  echo "brainify: engine not found: $ENGINE" >&2
+  exit 1
+fi
+
+TARGET=""
+FLAGS=()
+for arg in "$@"; do
+  case "$arg" in
+    -h|--help) exec python3 "$ENGINE" --help ;;
+    --*)       FLAGS+=("$arg") ;;
+    *)         TARGET="$arg" ;;
+  esac
+done
+
+if [[ -z "$TARGET" ]]; then
+  if ! command -v osascript >/dev/null 2>&1; then
+    echo "brainify: pas de sélecteur Finder disponible (osascript introuvable)." >&2
+    echo "usage: brainify <dossier> [--split] [--force] [--dry-run] [--no-audit]" >&2
+    exit 2
+  fi
+  # Native Finder folder picker; empty result means the user cancelled.
+  TARGET="$(osascript -e 'POSIX path of (choose folder with prompt "🧠 Choisis le dossier à brAInifier")' 2>/dev/null || true)"
+  if [[ -z "$TARGET" ]]; then
+    echo "brainify: aucun dossier choisi — annulé."
+    exit 130
+  fi
+fi
+
+exec python3 "$ENGINE" "$TARGET" ${FLAGS[@]+"${FLAGS[@]}"}

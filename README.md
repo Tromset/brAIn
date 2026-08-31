@@ -34,16 +34,20 @@ Full detail in the spec: [brAIn.md](brAIn.md).
 
 **Any LLM** — paste [Prompt.md](Prompt.md) together with access to your folder; the algorithm is step-by-step and deterministic.
 
-**Claude Code** — this repo ships a skill: say *"brainify this folder"* (see [.claude/skills/brainify/SKILL.md](.claude/skills/brainify/SKILL.md)).
+**Claude Code / Cursor** — this repo ships a skill: say *"brainify this folder"* (see [Skill.md](Skill.md)).
 
 **Starting a folder by hand** — copy the four templates from [templates.md](templates.md) and fill the placeholders.
 
-**Measure & verify** — extract the stdlib-only auditor embedded in [Audit.md](Audit.md):
+**CLI (recommended)** — brAInify any folder with styled progress bars, then audit:
 
 ```bash
-awk '/^```python$/{code=1; next} /^```$/{code=0} code' Audit.md > brain_audit.py
-python3 brain_audit.py <your-folder>   # tokens, scan-vs-navigation savings, link integrity
+./brainify                                          # Finder picker → brAInify the chosen folder
+./brainify --no-split                               # picker, keep layout (no Agents/ + Code/)
+python3 scripts/brainify.py <your-folder>           # Agents/Code split + hubs + yaml + audit
+python3 scripts/brain_audit.py <your-folder>        # tokens, savings, link integrity
 ```
+
+Details: [scripts/](scripts/README.md). The auditor also lives embedded in [Audit.md](Audit.md) (rule 4).
 
 ## Proof
 
@@ -60,7 +64,9 @@ This repo dogfoods its own rules — every folder has a hub and a `brain.yaml`, 
 | [Audit.md](Audit.md) | Measurement methodology, demo results + the auditor itself (embedded per rule 4) |
 | [templates.md](templates.md) | Ready-to-copy templates (hub, `brain.yaml`, content file, config) |
 | [examples/](examples/README.md) | Before/after demo — the "Site Madame Martin" mini-project |
-| [.claude/skills/brainify/](.claude/skills/brainify/SKILL.md) | Claude Code skill wrapping the prompt |
+| [brainify](./brainify) | Launcher — Finder folder picker → `scripts/brainify.py` |
+| [scripts/](scripts/README.md) | CLI — `brainify.py` (progress UI) + `brain_audit.py` |
+| [Skill.md](Skill.md) | Agent skill — brainify workflow for Claude Code / Cursor |
 | [brain.yaml](brain.yaml) | This folder's variables (rule 6) |
 
 ## References

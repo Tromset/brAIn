@@ -1,0 +1,14 @@
+# brain.yaml — folder variables (brAIn rule 6)
+name: scripts
+purpose: "CLI to brAInify any folder and audit the result — styled progress, stdlib only"
+parent: ../brain.yaml
+children: []
+files:
+  brainify.py: "Main brainify command with multi-stage progress bars"
+  brain_audit.py: "Dependency-free auditor — tokens, savings, link integrity"
+  README.md: "Hub — how to run brainify and brain_audit"
+when_to_read:
+  "How do I brainify a folder from the terminal?": brainify.py
+  "How do I run the CLI / what flags exist?": README.md
+  "Measure tokens or check broken links / orphans?": brain_audit.py
+links: {}
